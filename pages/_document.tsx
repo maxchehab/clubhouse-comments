@@ -20,16 +20,10 @@ export default class extends Document {
           rel="stylesheet"
         />
         <Head />
-        <body>
+        <body style={{ margin: 0, padding: 0 }}>
           <Main />
           <NextScript />
         </body>
-        <style jsx>{`
-          body {
-            margin: 0;
-            padding: 0;
-          }
-        `}</style>
       </Html>
     );
   }
