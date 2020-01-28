@@ -3,12 +3,12 @@ import { GitHubLogo } from "./github-logo";
 
 export const GitHubButton = () => (
   <>
-    <button>
+    <a href="/api/auth/login">
       <div className={"logo"}>
         <GitHubLogo />
       </div>
       <div className={"content"}>Login with GitHub</div>
-    </button>
+    </a>
     <style jsx>{`
       .content {
         align-items: center;
@@ -21,7 +21,8 @@ export const GitHubButton = () => (
         text-align: center;
       }
 
-      button {
+      a {
+        text-decoration: none;
         align-items: center;
         background: ${colors.primary};
         border-radius: ${radius.large};
